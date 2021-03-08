@@ -1,0 +1,30 @@
+pila segment stack 'stack'
+	dw 100h dup (?)
+pila ends
+datos segment 'data'
+	msg db 'hola mundo |$'
+datos ends
+codigo segment 'code'
+	assume cs:codigo, ds:datos, ss:pila
+	main PROC
+		mov ax,datos
+		mov ds,ax
+		
+		;establecemos contador
+		mov cx,0
+		bucle:
+			mov dx,OFFSET msg
+			mov ah,9
+			int 21h
+			;actualizamos el contador
+			inc cx
+			;comprobamos condición
+			cmp cx,7
+			jne bucle
+
+		mov ax,4C00h
+		int 21h
+	main ENDP
+codigo ends
+
+END main
