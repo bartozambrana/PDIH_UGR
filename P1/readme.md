@@ -7,13 +7,12 @@ Alumnos:
 
 
 ## Introducción.
-Para una mayor facilidad a la hora de ejecutar las funciones de ejemplo hemos implementado un menú, siendo el siguiente:
+Para una mayor facilidad a la hora de ejecutar las funciones de ejemplo hemos implementado un menú, que se muestra en la siguiente captura:
 
 ![Menu](./imagenes/Menu.png)
 
 ## Ejercicios obligatorios
 
-Desarrollo de las siguientes funciones:
 
 ### `gotoxy(x,y)` 
 
@@ -62,7 +61,7 @@ void setcursortype(int tipo_cursor){
 ```
 > Ejemplo de utilización de la función:
 
-![setcursortype](./setcursortype.png)
+![setcursortype](./imagenes/setcursortype.png)
 
 ### `setvideomode(BYTE modo)`
 
@@ -208,7 +207,7 @@ printf("\n");
 
 ### Ejercicio 1
 
-La función para pintar el cuadrado se ha hecho mediante dos bucles que imprimen, por un lado, los lados horizontales, y por otro, los verticales.
+La función para pintar el cuadrado se ha hecho mediante dos bucles que imprimen los lados horizontales y  los verticales, respectivamente.
 
 ```C
 
