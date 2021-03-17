@@ -291,6 +291,6 @@ int main(){
 ```
 
 
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![cga](./imagenes/cga.png)
