@@ -31,7 +31,7 @@ void gotoxy(int x, int y){
 	int86(0x10, &inregs, &outregs);
 }
 ```
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![gotoxy](./imagenes/gotoxy.png)
 
@@ -60,7 +60,7 @@ void setcursortype(int tipo_cursor){
 	int86(0x10, &inregs, &outregs);
 }
 ```
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![setcursortype](./setcursortype.png)
 
@@ -79,7 +79,7 @@ void setvideomode(BYTE modo){
 }
 ```
 
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![setvideomode](./imagenes/setvideomode.png)
 
@@ -100,7 +100,7 @@ int getvideomode(){
 }
 ```
 
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![getvideomode](./imagenes/getvideomode.png)
 
@@ -116,7 +116,7 @@ void textcolor(int  color){
 	text_color = color;
 }
 ```
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![textcolor](./imagenes/textcolor.png)
 
@@ -133,7 +133,7 @@ void textbackground(int color){
 	background_color = color;
 }
 ```
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![textbackground](./imagenes/textbackground.png)
 
@@ -159,7 +159,7 @@ void clrscr(){
 	}
 }
 ```
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![clrscr](./imagenes/clrscr.png)
 
@@ -180,7 +180,7 @@ void cputchar(unsigned char c){
 }
 ```
 
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![cputchar](./imagenes/cputchar.png)
 
@@ -198,7 +198,7 @@ printf("\n");
 }
 ```
 
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![getche](./imagenes/getche.png)
 
@@ -241,7 +241,7 @@ void recuadro(int x1, int y1, int x2, int y2, int color_fondo, int color_fuente)
 }
 ```
 
->> Ejemplo de utilización de la función:
+> Ejemplo de utilización de la función:
 
 ![recuadro](./imagenes/recuadro.png)
 
