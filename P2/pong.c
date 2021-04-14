@@ -1,6 +1,6 @@
 #include <ncurses.h>
 #include <unistd.h>
-#include <stdlib.h>
+
 
 #define DELAY 30000
 typedef struct
@@ -91,13 +91,13 @@ int main(int argc, char *argv[]){
 	while(!parar){
 
 		//movimiento de la bola
-		erase();
+		clear();
 
-		//Dibujamos la pelotita 
+		//Dibujamos la pelotita y barra divisoria de campos 
 		mvprintw(y, x, "o");
 		mvvline(0, max_x / 2, ACS_VLINE, max_y);
 		
-		// dibujar la barra central de separación 
+		// dibujado de los contadores de cada jugador. 
 		mvprintw(2, max_x / 2 - 2, "%i | %i", puntos_izquierda, puntos_derecha);
 
 		// dibujar PALETAS izda y dcha
@@ -108,8 +108,8 @@ int main(int argc, char *argv[]){
 		
 		// refrescar pantalla para 
 		refresh();
-
-		usleep(DELAY);		// retardo para evitar extrema complejidad del juego 
+		// retardo para evitar extrema complejidad del juego
+		usleep(DELAY);		 
 		
 		/*********************************************************************/
 		
@@ -187,7 +187,6 @@ int main(int argc, char *argv[]){
 				getchar();				//Parar
 				break;
 			case 0x1B:					//Salir
-				endwin();
 				parar = true;
 				break;
 		}
