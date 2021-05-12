@@ -1,0 +1,48 @@
+%!PS-Adobe-3.0
+
+/NewFontName
+<< %start a new dict
+  /Encoding ISOLatin1Encoding % change encoding vector
+  /OldFontName findfont {} forall % copy old font
+>> definefont pop
+<< /PageSize [842 595] >> setpagedevice
+
+/Times-Bold findfont % Get the basic font
+32 scalefont % Scale the font to 20 points
+setfont % Make it the current font
+
+newpath % Start a new path
+
+250 420  moveto
+(SEGUROS "LA NACIONAL" ) show 
+
+/Times-Roman findfont % Get the basic font
+30 scalefont % Scale the font to 20 points
+setfont % Make it the current font
+
+250 370 moveto 
+(Sucursal de Madrid) show 
+250 320 moveto 
+(Calle de la Ribera de Curtidores XX, Bajo Izda. ) show
+250 250 moveto 
+(28028 - Madrid) show
+250 220 moveto
+(Telf. 910 XXX XXX / Fax: 910 XXX XXX) show
+
+/Times-BoldItalic findfont % Get the basic font
+30 scalefont % Scale the font to 20 points
+setfont % Make it the current font
+
+250 190 moveto
+(lanacional.es) show
+
+% dibujar circunferencia
+  140 335 moveto
+% x y R angI angF
+  140 335 70 0 360 arc  
+0.5 0 0.5 setrgbcolor
+fill
+
+stroke
+
+showpage

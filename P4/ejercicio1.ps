@@ -1,0 +1,137 @@
+%!PS
+
+%% Inicializamos el objeto que vamos a dibujar.
+
+	%%Dibujamos un triángulo (techo)
+	newpath
+	100 190 moveto 
+	260 190 lineto
+	180 260 lineto
+	closepath %cierro el path para que una con el vértice de apertura.
+
+		%% Guardamos el path
+		gsave
+
+		%% Establecemos el color de relleno.
+		0.75 setgray
+		fill
+
+		%% Restauramos el path ya que el fill lo destruye.
+		grestore
+
+		%% Establecemso el color de la línea azul claro.
+		0.05 0.613 0.765 setrgbcolor
+		stroke 
+	
+	%% Dibujamos un rectángulo (paredes).
+	newpath
+	115 100 moveto
+	245 100 lineto
+	245 190 lineto
+	115 190 lineto
+	closepath 
+
+		%% Guardamos el path
+		gsave
+
+		%% Establecemos el color de relleno.
+		0.75 setgray
+		fill
+
+		%% Restauramos el path ya que el fill lo destruye.
+		grestore
+
+		%% Establecemso el color de la línea azul claro.
+		0.05 0.613 0.765 setrgbcolor
+
+		%% Cerramos el objeto a dibujar
+		stroke
+
+	%% Dibujamos un rectángulo (puerta).
+	newpath
+	165 100 moveto
+	195 100 lineto
+	195 150 lineto
+	165 150 lineto
+	closepath 
+
+		%% Guardamos el path
+		gsave
+
+		%% Establecemos el color de relleno.
+		0.75 setgray
+		fill
+
+		%% Restauramos el path ya que el fill lo destruye.
+		grestore
+
+		%% Establecemso el color de la línea azul claro.
+		0.05 0.613 0.765 setrgbcolor
+
+		%% Cerramos el objeto a dibujar
+		stroke
+
+	%% Dibujamos un cuadrado (ventana derecha).
+	newpath
+	205 160 moveto
+	235 160 lineto
+	235 180 lineto
+	205 180 lineto
+	closepath 
+
+		%% Guardamos el path
+		gsave
+
+		%% Establecemos el color de relleno.
+		0.75 setgray
+		fill
+
+		%% Restauramos el path ya que el fill lo destruye.
+		grestore
+
+		%% Establecemso el color de la línea azul claro.
+		0.05 0.613 0.765 setrgbcolor
+
+		%% Cerramos el objeto a dibujar
+		stroke
+
+	%% Dibujamos un cuadrado (ventana izquierda).
+	newpath
+	125 160 moveto
+	155 160 lineto
+	155 180 lineto
+	125 180 lineto
+	closepath 
+
+		%% Guardamos el path
+		gsave
+
+		%% Establecemos el color de relleno.
+		0.75 setgray
+		fill
+
+		%% Restauramos el path ya que el fill lo destruye.
+		grestore
+
+		%% Establecemso el color de la línea azul claro.
+		0.05 0.613 0.765 setrgbcolor
+
+		%% Cerramos el objeto a dibujar
+		stroke
+
+	%% Dibujamos texto que establezca Mi casita.
+	/Times-Roman findfont
+	10 scalefont
+	setfont
+
+	newpath
+	100 135 moveto
+
+	gsave
+	90 rotate
+	(Mi Casita) show
+	grestore
+
+
+%% Dibujamos la página.
+showpage
